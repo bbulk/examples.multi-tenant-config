@@ -27,7 +27,7 @@ public class TenantConfigSource implements ConfigSource {
     public String getValue(String propertyName) {
         if (propertyName.startsWith(TENANT_PREFIX)) {
             String configValue = localConfig.get(propertyName);
-            // custom behavior, fallback to the default value instead of failing
+            // fallback to the default value instead of failing, if there's no specific value for this tenant
             if (configValue == null) {
                 String defaultProperty = TENANT_PREFIX + DEFAULT_TENANT + propertyName.substring(propertyName.indexOf("."));
                 configValue = ConfigProvider.getConfig().getConfigValue(defaultProperty).getValue();
