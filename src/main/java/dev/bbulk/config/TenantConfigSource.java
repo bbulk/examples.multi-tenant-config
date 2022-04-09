@@ -12,11 +12,11 @@ import static dev.bbulk.context.TenantInfo.DEFAULT_TENANT;
 public class TenantConfigSource implements ConfigSource {
 
     private final Map<String, String> localConfig = Map.of(
-            "tenant/someTenant1.bb_message", "Hello Ralf",
-            "tenant/someTenant2.bb_message", "Hello everyone!",
-            "tenant/someTenant3.bb_message", "Hi Karen",
-            "tenant/someTenant4.bb_message", "Bonjour Laura!",
-            "tenant/someTenant5.bb_message", "Hi Fred!");
+            "tenant/someTenant1.bbulk_message", "Hello Ralf",
+            "tenant/someTenant2.bbulk_message", "Hello everyone!",
+            "tenant/someTenant3.bbulk_message", "Hi Karen",
+            "tenant/someTenant4.bbulk_message", "Bonjour Laura!",
+            "tenant/someTenant5.bbulk_message", "Hi Fred!");
 
     @Override
     public Set<String> getPropertyNames() {

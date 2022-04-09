@@ -15,7 +15,7 @@ import java.util.Set;
 @Singleton
 public class ContextEnrichmentSource implements ConfigSource {
 
-    private static final String MY_CONFIGS_PREFIX = "bb_";
+    private static final String MY_CONFIGS_PREFIX = "bbulk_";
     public static final String TENANT_PREFIX = "tenant/";
 
     private static CDI<Object> cdi;

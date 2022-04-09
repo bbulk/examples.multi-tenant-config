@@ -8,10 +8,10 @@ import javax.inject.Provider;
 @ApplicationScoped
 public class GreetingService {
 
-    @ConfigProperty(name = "bb_message")
+    @ConfigProperty(name = "bbulk_message")
     Provider<String> configValue;
 
-    @ConfigProperty(name = "bb_int")
+    @ConfigProperty(name = "bbulk_int")
     Provider<Integer> configNumber2;
 
     public String getGreeting() {
