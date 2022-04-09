@@ -9,14 +9,14 @@ import javax.inject.Provider;
 public class GreetingService {
 
     @ConfigProperty(name = "bbulk_message")
-    Provider<String> configValue;
+    Provider<String> configString;
 
     @ConfigProperty(name = "bbulk_int")
-    Provider<Integer> configNumber2;
+    Provider<Integer> configNumber;
 
     public String getGreeting() {
-        System.out.println("This tenant has number " + configNumber2.get());
-        return configValue.get();
+        System.out.println("This tenant has number " + configNumber.get());
+        return configString.get();
     }
 
 }
