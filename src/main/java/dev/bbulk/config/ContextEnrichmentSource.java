@@ -32,7 +32,7 @@ public class ContextEnrichmentSource implements ConfigSource {
 
     @Override
     public int getOrdinal() {
-        // do this filter before anything else
+        // execute this filter before anything else
         return 500;
     }
 
