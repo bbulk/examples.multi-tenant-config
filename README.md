@@ -1,4 +1,4 @@
-# config-test Project
+# Examples - Multi Tenant Configuration
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
