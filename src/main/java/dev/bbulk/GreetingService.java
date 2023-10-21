@@ -1,9 +1,8 @@
 package dev.bbulk;
 
+import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Provider;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
-
-import javax.enterprise.context.ApplicationScoped;
-import javax.inject.Provider;
 
 @ApplicationScoped
 public class GreetingService {

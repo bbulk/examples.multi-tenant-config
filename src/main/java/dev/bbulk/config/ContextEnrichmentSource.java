@@ -2,13 +2,13 @@ package dev.bbulk.config;
 
 import dev.bbulk.context.TenantInfo;
 import io.quarkus.runtime.Startup;
+import jakarta.annotation.PostConstruct;
+import jakarta.enterprise.inject.spi.CDI;
+import jakarta.inject.Singleton;
 import org.eclipse.microprofile.config.Config;
 import org.eclipse.microprofile.config.ConfigProvider;
 import org.eclipse.microprofile.config.spi.ConfigSource;
 
-import javax.annotation.PostConstruct;
-import javax.enterprise.inject.spi.CDI;
-import javax.inject.Singleton;
 import java.util.Set;
 
 @Startup
